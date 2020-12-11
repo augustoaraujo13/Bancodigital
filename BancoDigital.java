@@ -12,14 +12,15 @@ public class BancoDigital {
         System.out.println("Nome do usuario: ");
         String nome = teclado.next();
         System.out.println("Digite o numero da conta: ");
-        int num = teclado.nextInt();
+        int numero = teclado.nextInt();
         System.out.println("Digite o valor a despositar: ");
-        float dep = teclado.nextFloat();
+        float deposito = teclado.nextFloat();
         
         Conta c1 = new Conta();
         c1.setNome_do_usuario(nome);
-        c1.setNumero_da_conta(num);
-        
+        c1.setNumero_da_conta(numero);
+        c1.setAdicionar_dinheiro(deposito);
+
         c1.status();
     }
     

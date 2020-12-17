@@ -4,7 +4,7 @@ public class BancoDigital {
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        
+     try{        
         System.out.println("BEM VINDO AO SEU BANCO");
         System.out.println("----------------------");
         System.out.println("DIGITE SEUS DADOS COM ATENÇÃO");
@@ -20,8 +20,11 @@ public class BancoDigital {
         c1.setNome_do_usuario(nome);
         c1.setNumero_da_conta(numero);
         c1.setAdicionar_dinheiro(deposito);
-
+        
         c1.status();
-    }
-    
+     }
+     catch (Exception e){
+         System.out.println("Você digitou os camnpos de forma errada");
+     }
+    }   
 }
